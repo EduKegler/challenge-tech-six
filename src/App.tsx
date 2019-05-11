@@ -1,6 +1,5 @@
 import React from 'react';
-import './App.css';
-import Account from './account/account'
+import Account from './components/account/account-card'
 
 const App: React.FC = () => {
   return (

@@ -2,9 +2,17 @@ import React from 'react';
 interface Viewer {
     name: string
     login: string
+    avatar: string
 }
 const Profile: React.SFC<Viewer> = (props) => {
     return (
+        <div className="card">
+
+        <div className="card-image">
+            <figure className="image is-4by3">
+                <img src={props.avatar} alt="Placeholder image" />
+            </figure>
+        </div>
         <div className="card-content">
             <div className="media">
                 <div className="media-content">
@@ -12,9 +20,7 @@ const Profile: React.SFC<Viewer> = (props) => {
                     <p className="subtitle is-6">{props.login}</p>
                 </div>
             </div>
-            <div className="content">
-                <span>OII</span>
-            </div>
+        </div>
         </div>
     )
 }
