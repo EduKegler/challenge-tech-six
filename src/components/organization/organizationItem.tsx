@@ -1,5 +1,5 @@
 import React from 'react';
-import { Follower, Organization } from '../interface/interface'
+import { Organization } from '../interface/interface'
 
 interface Props {
     organization: Organization
@@ -10,12 +10,11 @@ const OrganizationItem: React.FC<Props> = ({ organization }) => {
         <div className="media">
             <div className="media-left">
                 <figure className="image is-48x48">
-                    <img src={organization.avatarUrl} alt="Placeholder image" />
+                    <img src={organization.avatarUrl} alt="avatar organization" />
                 </figure>
             </div>
             <div className="media-content">
-                <p className="title is-4">{organization.name}</p>
-                <p className="subtitle is-6">{organization.email}</p>
+                <p className="title is-6">{organization.name}</p>
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ const FollowerItem: React.FC<Props> = ({ follower }) => {
         <div className="media">
             <div className="media-left">
                 <figure className="image is-48x48">
-                    <img src={follower.avatarUrl} alt="Placeholder image" />
+                    <img src={follower.avatarUrl} alt="avatar follower" />
                 </figure>
             </div>
             <div className="media-content">

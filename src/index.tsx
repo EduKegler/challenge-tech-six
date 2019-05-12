@@ -22,7 +22,6 @@ const client: ApolloClient<any> = new ApolloClient({
     link: httpLink, cache
 })
 
-
 ReactDOM.render(
     <ApolloProvider client={client}>
         <App />
