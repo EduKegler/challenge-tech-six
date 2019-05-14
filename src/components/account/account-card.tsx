@@ -6,6 +6,7 @@ import Status from '../status/status'
 import FollowerList from '../follower/followerList';
 import Loading from '../loading/loading'
 import OrganizationList from '../organization/organizationList';
+import Error from '../error/error'
 import { Account } from '../interface/interface'
 import { GET_CURRENT_USER } from '../../query'
 
@@ -13,7 +14,7 @@ const AccountCard: React.FC = () => (
   <Query <Account> query={GET_CURRENT_USER}>
     {({ loading, error, data }) => {
       if (error) {
-        return <div>Error</div>
+        return <Error />
       }
       if (!data || loading) {
         return <Loading />;
